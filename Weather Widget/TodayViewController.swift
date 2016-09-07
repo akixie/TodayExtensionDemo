@@ -2,8 +2,8 @@
 //  TodayViewController.swift
 //  Weather Widget
 //
-//  Created by El Capitan on 2015/12/29.
-//  Copyright © 2015年 AppCoda. All rights reserved.
+//  Created by akixie on 16/9/1.
+//  Copyright © 2016年 Aki.Xie. All rights reserved.
 //
 
 import UIKit
