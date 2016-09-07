@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Weather_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCA-QB-0qc">
+                                <rect key="frame" x="16" y="8" width="125" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="qWD-Oy-wNC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2z-xD-Tf6">
+                                <rect key="frame" x="155" y="8" width="69" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="3n7-ZD-cbr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCU-he-gbF">
+                                <rect key="frame" x="240" y="8" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="JCA-QB-0qc" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="6YU-bv-BwB"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="I2z-xD-Tf6" secondAttribute="bottom" constant="8" id="Gy4-Bx-oay"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="XCU-he-gbF" secondAttribute="bottom" constant="8" id="NZO-wX-Nn0"/>
+                            <constraint firstItem="JCA-QB-0qc" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="RfJ-4g-4Wj"/>
+                            <constraint firstItem="I2z-xD-Tf6" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="SA5-L5-ynt"/>
+                            <constraint firstItem="XCU-he-gbF" firstAttribute="leading" secondItem="I2z-xD-Tf6" secondAttribute="trailing" constant="16" id="eSs-JX-lXl"/>
+                            <constraint firstItem="XCU-he-gbF" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="gyK-qf-Mig"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="JCA-QB-0qc" secondAttribute="bottom" constant="8" id="rt3-Tj-d5z"/>
+                            <constraint firstItem="XCU-he-gbF" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="sMg-mZ-g0m"/>
+                            <constraint firstItem="I2z-xD-Tf6" firstAttribute="leading" secondItem="JCA-QB-0qc" secondAttribute="trailing" constant="14" id="tmr-Bc-9Ch"/>
+                        </constraints>
+                        <connections>
+                            <action selector="gotoApp:" destination="M4Y-Lb-cyx" eventType="touchDown" id="nBL-Wv-evC"/>
+                        </connections>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="37"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="JCA-QB-0qc" id="LUi-45-HKN"/>
+                        <outlet property="tempLabel" destination="XCU-he-gbF" id="FZ6-92-vsR"/>
+                        <outlet property="weatherLabel" destination="I2z-xD-Tf6" id="izF-x3-BjJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="284.5"/>
+        </scene>
+    </scenes>
+</document>
