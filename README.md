@@ -6,5 +6,7 @@
 
 ### GIF效果预览如下：
 
-![预览]
+![image]
 (https://github.com/akixie/TodayExtensionDemo/blob/master/get_today.gif)
+
+ ![image](https://github.com/akixie/ImagePicker/blob/master/ImagePicker/ImagePicker/GetFit_ImagePicker.gif?raw=true)
